@@ -5,7 +5,7 @@ public class time{
     private int empates;
     private int derrotas;
     
-    void time() {
+    public time() {
         pontos = 0 ;
         vitorias = 0;
         empates = 0;
@@ -14,7 +14,7 @@ public class time{
     public String getNome(){
         return nome;
     }
-    public void setNome(){
+    public void setNome(String nome){
         this.nome = nome;
     }
     public int getPontos (){
