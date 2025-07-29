@@ -1,6 +1,6 @@
 import java.util.Date;
 import java.util.Random;
-public class partida extends panteon {
+public class partida implements  panteon {
     private time tl;
     private time tv;
 
@@ -44,8 +44,8 @@ public class partida extends panteon {
 
     @Override
     public void IP(){
-        scV = r.nextInt(10);
-		scL = r.nextInt(10);
+        scV = r.nextInt(5);
+		scL = r.nextInt(5);
     }
     @Override
     public void MR(){
