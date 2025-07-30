@@ -41,11 +41,16 @@ public class time{
     public void setDerrotas (int derrotas){
         this.derrotas = derrotas;
     }
-    public void mostrar (){
+    public void mostrar () throws InterruptedException{
+        Thread.sleep(1000);
         System.out.println(nome);
+        Thread.sleep(1000);
         System.out.println("Pontos: "+pontos);
+        Thread.sleep(1000);
         System.out.println("Vitorias: "+vitorias);
+        Thread.sleep(1000);
         System.out.println("Empates: "+empates);
+        Thread.sleep(1000);
         System.out.println("Derrotas: "+derrotas);
     }
 }
