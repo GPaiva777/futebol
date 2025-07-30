@@ -44,11 +44,12 @@ public class partida implements  panteon {
 
     @Override
     public void IP(){
-        scV = r.nextInt(5);
-		scL = r.nextInt(5);
+        scV = r.nextInt(10);
+		scL = r.nextInt(10);
     }
     @Override
-    public void MR(){
+    public void MR() {
+    
         System.out.println("\n" + tl.getNome()+ " " + scL + " x " + scV + " " + tv.getNome()+"\n");
     }
     @Override
@@ -59,7 +60,7 @@ public class partida implements  panteon {
             tv.setDerrotas(tv.getDerrotas()+1);
         }else if(scL < scV){
             tv.setPontos(tv.getPontos()+3);
-            tv.setVitorias(tv.getVitorias()+3);
+            tv.setVitorias(tv.getVitorias()+1);
             tl.setDerrotas(tl.getDerrotas()+1);
         }else if (scL == scV){
             tv.setPontos(tv.getPontos()+1);
